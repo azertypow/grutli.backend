@@ -1,0 +1,27 @@
+title: Salles
+
+icon: tag
+
+num: zero
+
+status:
+  draft:
+    label: actif
+    text: Un tag n'a pas de status, il est donc toujours actif
+
+options:
+  delete: false
+  changeStatus: false
+  changeTitle: true
+  sort: false
+  duplicate: false
+  changeSlug: false
+
+columns:
+  - width: 2/3
+    fields:
+      info:
+        type: info
+        label: ' '
+        text: |
+          La référence de ce champs est **{{page.slug}}**, et toutes les pages qui y sont liées garde cette référence.

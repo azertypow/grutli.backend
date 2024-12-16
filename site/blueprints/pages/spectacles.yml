@@ -1,0 +1,31 @@
+blueprint: page
+
+title: Spectacles
+
+icon: ticket
+
+options:
+  sort: false
+  changeSlug: false
+  delete: false
+  changeTitle: false
+  changeStatus: false
+  duplicate: false
+
+columns:
+  - width: 1/3
+    sections:
+      drafts:
+        extends: sections/spectacles
+        type: pages
+        label: Brouillon
+        status: draft
+
+  - width: 2/3
+    sections:
+      listed:
+        extends: sections/spectacles
+        type: pages
+        label: Publié
+        status: listed
+        search: true

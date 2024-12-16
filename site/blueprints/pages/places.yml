@@ -1,0 +1,32 @@
+blueprint: page
+
+title: Salles
+
+icon: tag
+
+options:
+  changeSlug: false
+  delete: false
+  changeTitle: true
+  sort: false
+  changeStatus: false
+  duplicate: false
+
+
+status:
+  listed:
+    label: Publié
+    text: L'article est répertoriée dans l'archive et en ligne.
+
+columns:
+  - width: 1/1
+    sections:
+      themes:
+        search: true
+        label: Éspaces
+        type: pages
+        template: place
+        empty: la liste est vide pour l'instant…
+        image: false
+        layout: table
+        columns: null

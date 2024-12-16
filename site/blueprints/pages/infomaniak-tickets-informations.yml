@@ -1,0 +1,34 @@
+blueprint: page
+
+title: Informations de la billetterie Infomaniak
+
+num: date
+
+icon: 📖
+
+options:
+  sort: false
+  delete: false
+  changeSlug: false
+  changeTitle: false
+  changeStatus: false
+  duplicate: false
+
+status:
+  draft:
+    label: Brouillon
+    text: Ne peut être vue que par les éditeurs ayant accès à l'administration.
+  listed:
+    label: Publié
+    text: en ligne.
+
+columns:
+  - width: 1/1
+    fields:
+      shops:
+        type: structure
+        fields:
+          name:
+            type: text
+          url:
+            type: url

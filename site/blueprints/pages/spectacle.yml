@@ -1,0 +1,89 @@
+blueprint: page
+
+title: Project
+
+num: date
+
+icon: 📖
+
+status:
+  draft:
+    label: Brouillon
+    text: Le spectacle est toujours en mode brouillon. Elle ne peut être vue que par les éditeurs ayant accès à l'administration.
+  listed:
+    label: Publié
+    text: Le spectacle est en ligne.
+
+columns:
+  - width: 1/1
+    fields:
+
+      eventTitle:
+        label: Nom de l'événement dans la billeterie infomaniak
+        type: multiselect
+        required: true
+        max: 1
+        options:
+          type: api
+          url: "https://grutli.deno.dev/"
+          text: "{{ item.name }}"
+          value: "{{ item.name }}"
+
+      cover:
+        type: files
+        required: true
+        label: Cover
+        help: Image de couverture
+        extends: files/imageOnlyOne
+
+      introduction:
+        label: Intro
+        type: writer
+        marks:
+          - bold
+          - italic
+          - link
+        nodes:
+          - paragraph
+
+  - width: 2/3
+    fields:
+      htmlContent:
+        type: blocks
+        label: Contenu
+        fieldsets:
+          - image
+          - video
+          - text
+          - quote
+          - imageGallery
+          - listOfDetails
+          - type: heading
+            extends: blocks/heading
+            fields:
+              level:
+                options:
+                  - h2
+                  - h3
+
+      galleryProject:
+        type: blocks
+        label: Galerie
+        fieldsets:
+          - image
+  - width: 1/3
+    sections:
+      meta:
+        type: fields
+        fields:
+          places:
+            required: true
+            label: salle(s)
+            type: multiselect
+            min: 1
+            options:
+              type: query
+              query: site.find('places').childrenAndDrafts.template('place')
+              text: "{{ item.title }}"
+              value: "{{ item.slug }}"
+
