@@ -1,0 +1,14 @@
+blueprint: page
+
+name: Gallerie
+icon: image
+preview: fields
+fields:
+  image:
+    label: field.blocks.image.name
+    type: files
+    template: blocks/image
+    query: model.images
+    multiple: true
+    uploads:
+      template: blocks/image

@@ -16,15 +16,6 @@ return [
                 go('panel');
             },
         ],
-        [
-            'pattern' => '/infomaniak/list-of-event-name',
-            'action' => function() {
-                include_once 'utils/infomaniak_getListOfEvent.php';
-                header("Access-Control-Allow-Origin: *");
-
-                return infomaniak_getListOfEvent();
-            },
-        ],
     ],
     'panel' => [
         'css' => 'site/plugins/custom-panel/css/main.css'

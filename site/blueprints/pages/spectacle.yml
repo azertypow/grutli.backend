@@ -23,28 +23,32 @@ columns:
         type: multiselect
         required: true
         max: 1
-        options:
-          type: api
-          url: "https://grutli.deno.dev/"
-          text: "{{ item.name }}"
-          value: "{{ item.name }}"
+#        options:
+#          type: api
+#          url: "https://grutli.deno.dev/"
+#          text: "{{ item.name }}"
+#          value: "{{ item.name }}"
 
       cover:
+        width: 1/4
         type: files
         required: true
-        label: Cover
+        label: Image de couverture
         help: Image de couverture
         extends: files/imageOnlyOne
 
-      introduction:
-        label: Intro
-        type: writer
-        marks:
-          - bold
-          - italic
-          - link
-        nodes:
-          - paragraph
+      places:
+        width: 1/4
+        required: true
+        label: salle(s)
+        type: multiselect
+        min: 1
+        options:
+          type: query
+          query: site.find('places').childrenAndDrafts.template('place')
+          text: "{{ item.title }}"
+          value: "{{ item.slug }}"
+
 
   - width: 2/3
     fields:
@@ -52,38 +56,26 @@ columns:
         type: blocks
         label: Contenu
         fieldsets:
+          - text
           - image
           - video
-          - text
-          - quote
-          - imageGallery
-          - listOfDetails
-          - type: heading
-            extends: blocks/heading
-            fields:
-              level:
-                options:
-                  - h2
-                  - h3
+#          - imageGallery
+#          - type: heading
+#            extends: blocks/heading
+#            fields:
+#              level:
+#                options:
+#                  - h2
+#                  - h3
 
-      galleryProject:
-        type: blocks
-        label: Galerie
-        fieldsets:
-          - image
-  - width: 1/3
-    sections:
-      meta:
-        type: fields
-        fields:
-          places:
-            required: true
-            label: salle(s)
-            type: multiselect
-            min: 1
-            options:
-              type: query
-              query: site.find('places').childrenAndDrafts.template('place')
-              text: "{{ item.title }}"
-              value: "{{ item.slug }}"
+#      galleryProject:
+#        type: blocks
+#        label: Galerie
+#        fieldsets:
+#          - image
+#  - width: 1/3
+#    sections:
+#      meta:
+#        type: fields
+#        fields:
 

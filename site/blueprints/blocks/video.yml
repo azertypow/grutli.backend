@@ -1,0 +1,25 @@
+blueprint: page
+
+name: field.blocks.video.name
+icon: video
+preview: video
+fields:
+  url:
+    label: URL video Vimeo
+    type: url
+    placeholder: https://vimeo.com/787533687
+  credit:
+    label: Crédits
+    type: writer
+    inline: true
+  title:
+    label: Titre
+    type: writer
+    inline: true
+#  isFullWidth:
+#    label: Largeur
+#    help: Largeur de la photo dans la page
+#    type: toggle
+#    text:
+#      - regular
+#      - large

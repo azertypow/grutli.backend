@@ -1,0 +1,14 @@
+name: Extrait
+icon: quote
+
+wysiwyg: true
+preview: fields
+
+fields:
+  text:
+    label: field.blocks.quote.text.label
+    placeholder: field.blocks.quote.text.placeholder
+    type: writer
+    inline: true
+    icon: quote
+  citation: false
