@@ -17,28 +17,29 @@ status:
 columns:
   - width: 1/1
     fields:
-
       eventTitle:
         label: Nom de l'événement dans la billeterie infomaniak
         type: multiselect
         required: true
         max: 1
-#        options:
-#          type: api
-#          url: "https://grutli.deno.dev/"
-#          text: "{{ item.name }}"
-#          value: "{{ item.name }}"
+        options:
+          type: api
+          url: "https://grutli.deno.dev/"
+          text: "{{ item.name }}"
+          value: "{{ item.name }}"
 
+  - width: 1/2
+    fields:
       cover:
-        width: 1/4
         type: files
         required: true
         label: Image de couverture
         help: Image de couverture
         extends: files/imageOnlyOne
 
+  - width: 1/2
+    fields:
       places:
-        width: 1/4
         required: true
         label: salle(s)
         type: multiselect
@@ -49,8 +50,44 @@ columns:
           text: "{{ item.title }}"
           value: "{{ item.slug }}"
 
+  - width: 1/2
+    fields:
+      company:
+        label: Compagnie(s) / Collectif(s) ?
+        type: structure
+        fields:
+          authors_name:
+            label: nom
+            type: text
+      linked_spectacle:
+        label: Spectacle(s) lié(s)
+        type: multiselect
+        options:
+          type: query
+          query: site.find('spectacles').childrenAndDrafts.template('spectacle')
+          text: "{{ item.title }}"
+          value: "{{ item.slug }}"
 
-  - width: 2/3
+  - width: 1/2
+    fields:
+      peoples:
+        label: (liste des personnes) Marilu, je mets quoi comme nom?
+        type: structure
+        columns:
+          peoples_firstname:
+            width: 1/2
+          peoples_lastname:
+            width: 1/2
+        fields:
+          peoples_firstname:
+            label: prénom
+            type: text
+          peoples_lastname:
+            label: nom
+            type: text
+
+
+  - width: 1/1
     fields:
       htmlContent:
         type: blocks
@@ -67,6 +104,22 @@ columns:
 #                options:
 #                  - h2
 #                  - h3
+      details:
+        label: liste détails (Marilu ?)
+        type: structure
+        fields:
+          details_title:
+            label: nom
+            type: text
+          details_items:
+            type: structure
+            fields:
+              details_item_firstname:
+                label: nom 1
+                type: text
+              details_item_lastname:
+                label: nom 2
+                type: text
 
 #      galleryProject:
 #        type: blocks
