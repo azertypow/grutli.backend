@@ -64,6 +64,9 @@ columns:
           authors_name:
             label: nom
             type: text
+          authors_link:
+            label: liens externe
+            type: url
       linked_spectacle:
         label: Spectacle(s) lié(s)
         type: multiselect
@@ -90,7 +93,9 @@ columns:
           peoples_lastname:
             label: nom
             type: text
-
+          peoples_function:
+            label: nom
+            type: text
 
   - width: 1/1
     fields:
