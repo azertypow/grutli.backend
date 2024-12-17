@@ -58,7 +58,7 @@ columns:
   - width: 1/3
     fields:
       company:
-        label: Compagnie(s) / Collectif(s) ?
+        label: Compagnie(s) / Mise en scène / Texte(s)
         type: structure
         fields:
           authors_name:
