@@ -80,19 +80,11 @@ columns:
     fields:
       peoples:
         label: Distribution
-        type: structure
-        columns:
-          peoples_function:
-            width: 1/2
-          peoples_name:
-            width: 1/2
-        fields:
-          peoples_function:
-            label: fonction
-            type: text
-          peoples_name:
-            label: nom
-            type: text
+        type: writer
+        marks:
+          - bold
+          - italic
+        nodes: false
 
   - width: 1/1
     fields:
@@ -112,21 +104,12 @@ columns:
 #                  - h2
 #                  - h3
       details:
-        label: liste détails (Marilu ?)
-        type: structure
-        fields:
-          details_title:
-            label: nom
-            type: text
-          details_items:
-            type: structure
-            fields:
-              details_item_firstname:
-                label: nom 1
-                type: text
-              details_item_lastname:
-                label: nom 2
-                type: text
+        label: Production(s) / Coproduction(s) / Soutien(s)
+        type: writer
+        marks:
+          - bold
+          - italic
+        nodes: false
 
 #      galleryProject:
 #        type: blocks
