@@ -20,6 +20,7 @@ columns:
         type: pages
         label: Brouillon
         status: draft
+        layout: list
 
   - width: 2/3
     sections:
