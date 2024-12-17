@@ -20,7 +20,7 @@ columns:
       eventTitle:
         label: Nom de l'événement dans la billeterie infomaniak
         type: multiselect
-        required: true
+#        required: true
 #        max: 1
         options:
           type: api
