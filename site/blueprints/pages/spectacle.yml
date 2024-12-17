@@ -79,22 +79,19 @@ columns:
   - width: 2/3
     fields:
       peoples:
-        label: (liste des personnes) Marilu, je mets quoi comme nom?
+        label: Distribution
         type: structure
         columns:
-          peoples_firstname:
+          peoples_function:
             width: 1/2
-          peoples_lastname:
+          peoples_name:
             width: 1/2
         fields:
-          peoples_firstname:
-            label: prénom
-            type: text
-          peoples_lastname:
-            label: nom
-            type: text
           peoples_function:
             label: nom
+            type: text
+          peoples_name:
+            label: prénom
             type: text
 
   - width: 1/1
