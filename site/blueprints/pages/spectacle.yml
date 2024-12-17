@@ -103,7 +103,7 @@ columns:
           - text
           - image
           - video
-#          - imageGallery
+          - imageGallery
 #          - type: heading
 #            extends: blocks/heading
 #            fields:
