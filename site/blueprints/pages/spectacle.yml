@@ -88,10 +88,10 @@ columns:
             width: 1/2
         fields:
           peoples_function:
-            label: nom
+            label: fonction
             type: text
           peoples_name:
-            label: prénom
+            label: nom
             type: text
 
   - width: 1/1
