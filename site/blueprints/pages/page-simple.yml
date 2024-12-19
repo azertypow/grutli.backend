@@ -13,9 +13,21 @@ options:
   duplicate: true
 
 columns:
-  - width: 2/3
+  - width: 1/1
     fields:
+      gapCol:
+        type: gap
+        width: 1/2
+      showInNavigation:
+        width: 1/4
+        type: toggle
+        default: false
+      showInHome:
+        width: 1/4
+        type: toggle
+        default: false
       htmlContent:
+        width: 1/2
         type: blocks
         label: Contenu
         fieldsets:
@@ -33,7 +45,7 @@ columns:
           - video
           - imageGallery
 
-  - width: 1/3
+  - width: 1/1
     sections:
       sectionsInfoDetails:
         label: ' '
