@@ -1,0 +1,5 @@
+type: files
+multiple: true
+query: model.images
+uploads:
+  template: image

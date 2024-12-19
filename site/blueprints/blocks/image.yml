@@ -12,14 +12,14 @@ fields:
     multiple: false
     uploads:
       template: blocks/image
-  credit:
-    label: Crédits
-    type: writer
-    inline: true
-  title:
-    label: Titre
-    type: writer
-    inline: true
+#  credit:
+#    label: Crédits
+#    type: writer
+#    inline: true
+#  title:
+#    label: Titre
+#    type: writer
+#    inline: true
 #  isFullWidth:
 #    label: Largeur
 #    help: Largeur de la photo dans la page
