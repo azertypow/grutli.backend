@@ -23,7 +23,15 @@ columns:
           - image
           - video
           - imageGallery
-
+      htmlContent_falk:
+        width: 1/2
+        type: blocks
+        label: Contenu FALK
+        fieldsets:
+          - text
+          - image
+          - video
+          - imageGallery
 
   - width: 1/3
     sections:

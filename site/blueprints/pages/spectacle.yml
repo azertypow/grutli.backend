@@ -86,6 +86,7 @@ columns:
   - width: 1/1
     fields:
       htmlContent:
+        width: 1/2
         type: blocks
         label: Contenu
         fieldsets:
@@ -100,6 +101,22 @@ columns:
 #                options:
 #                  - h2
 #                  - h3
+      htmlContent_falk:
+        width: 1/2
+        type: blocks
+        label: Contenu FALK
+        fieldsets:
+          - text
+          - image
+          - video
+          - imageGallery
+      #          - type: heading
+      #            extends: blocks/heading
+      #            fields:
+      #              level:
+      #                options:
+      #                  - h2
+      #                  - h3
       details:
         label: Production(s) / Coproduction(s) / Soutien(s)
         type: writer
