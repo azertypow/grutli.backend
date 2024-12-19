@@ -45,10 +45,8 @@ columns:
   - width: 2/3
     fields:
       places:
-        required: true
         label: salle(s)
         type: multiselect
-        min: 1
         options:
           type: query
           query: site.find('places').childrenAndDrafts.template('place')
@@ -82,7 +80,6 @@ columns:
         label: Distribution
         type: writer
         marks:
-          - bold
           - italic
         nodes: false
 
@@ -107,7 +104,6 @@ columns:
         label: Production(s) / Coproduction(s) / Soutien(s)
         type: writer
         marks:
-          - bold
           - italic
         nodes: false
 
@@ -118,7 +114,7 @@ columns:
 #          - image
       htmlDetails:
         type: blocks
-        label: Détails (Marilu?)
+        label: Détails
         fieldsets:
           - text
 

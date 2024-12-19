@@ -1,0 +1,21 @@
+blueprint: page
+
+name: texte et titre
+icon: text
+wysiwyg: true
+preview: text
+fields:
+  text:
+    type: writer
+    headings:
+      - 2
+      - 3
+    placeholder: field.blocks.text.placeholder
+    marks:
+      - bold
+      - italic
+      - link
+      - email
+    nodes:
+      - heading
+      - quote

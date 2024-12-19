@@ -3,7 +3,7 @@ title: Site
 columns:
   - width: 1/4
     sections:
-      info:
+      sectionsInfoDetails:
         label: ' '
         type: info
         theme: none
@@ -27,8 +27,19 @@ columns:
         size: medium
   - width: 3/4
     sections:
-      pages:
+      sectionsInfoPages:
+        label: ' '
+        type: info
+        theme: none
+        text: |
+          ### Pages
+      pages_spectacles:
         label: Spectacles
         type: pages
         template:
           - spectacles
+      pages_page:
+        label: Pages
+        type: pages
+        template:
+          - page-simple

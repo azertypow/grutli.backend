@@ -1,0 +1,47 @@
+blueprint: page
+
+title: Page simple
+
+icon: page
+
+options:
+  sort: true
+  changeSlug: true
+#  delete: false
+  changeTitle: true
+  changeStatus: true
+  duplicate: true
+
+columns:
+  - width: 2/3
+    fields:
+      htmlContent:
+        type: blocks
+        label: Contenu
+        fieldsets:
+          - textWithTitle
+          - image
+          - video
+          - imageGallery
+
+
+  - width: 1/3
+    sections:
+      sectionsInfoDetails:
+        label: ' '
+        type: info
+        theme: none
+        text: |
+          ### sous-page(s)
+      drafts:
+        extends: sections/page-simple
+        type: pages
+        label: Brouillon
+        status: draft
+        layout: list
+      listed:
+        extends: sections/page-simple
+        type: pages
+        label: Publié
+        status: listed
+        search: true

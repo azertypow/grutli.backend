@@ -1,0 +1,14 @@
+type: pages
+label: Page simple
+info: "{{ page.published }}"
+template: page-simple
+empty: pas de pages…
+sortBy: date desc
+size: tiny
+limit: 500
+layout: cardlets
+image:
+  query: page.cover.toFile
+  cover: true
+  ratio: 3/1
+
