@@ -16,6 +16,18 @@ return [
                 go('panel');
             },
         ],
+        [
+            'pattern' => '/site-info.json',
+            'action' => function() {
+                include_once 'site/templates/site-info.json.php';
+
+                header("Access-Control-Allow-Origin: *");
+
+                return \Kirby\Cms\Response::json(
+                    getSiteInfo(kirby(), site())
+                );
+            }
+        ],
     ],
     'panel' => [
         'css' => 'site/plugins/custom-panel/css/main.css'
