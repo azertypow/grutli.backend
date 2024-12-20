@@ -7,6 +7,9 @@
  * This setting must be set to false in production.
  * All config options: https://getkirby.com/docs/reference/system/options
  */
+
+header("Access-Control-Allow-Origin: *");
+
 return [
     'debug' => true,
     'routes' => [
@@ -21,7 +24,6 @@ return [
             'action' => function() {
                 include_once 'site/templates/site-info.json.php';
 
-                header("Access-Control-Allow-Origin: *");
 
                 return \Kirby\Cms\Response::json(
                     getSiteInfo(kirby(), site())
