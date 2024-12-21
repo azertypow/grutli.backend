@@ -40,7 +40,7 @@ columns:
         type: blocks
         label: Contenu FALK
         fieldsets:
-          - text
+          - textWithTitle
           - image
           - video
           - imageGallery
