@@ -1,0 +1,41 @@
+blueprint: page
+
+title: Page liste de pages
+
+icon: page
+
+options:
+  sort: true
+  changeSlug: true
+#  delete: false
+  changeTitle: true
+  changeStatus: true
+  duplicate: true
+
+columns:
+  - width: 1/1
+    fields:
+      gapCol:
+        type: gap
+        width: 1/2
+      showInNavigation:
+        width: 1/4
+        type: toggle
+        default: false
+      showInHome:
+        width: 1/4
+        type: toggle
+        default: false
+
+  - width: 1/1
+    fields:
+      places:
+        label: salle(s)
+        type: multiselect
+        min: 3
+        max: 5
+        options:
+          type: query
+          query: site.index.template('page-simple')
+          text: "{{ item.title }}"
+          value: "{{ item.slug }}"

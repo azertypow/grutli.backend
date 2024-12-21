@@ -43,3 +43,4 @@ columns:
         type: pages
         template:
           - page-simple
+          - page-internal-links
