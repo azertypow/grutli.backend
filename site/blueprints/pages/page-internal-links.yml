@@ -28,14 +28,23 @@ columns:
         default: false
 
   - width: 1/1
-    fields:
-      places:
-        label: salle(s)
-        type: multiselect
-        min: 3
-        max: 5
-        options:
-          type: query
-          query: site.index.template('page-simple')
-          text: "{{ item.title }}"
-          value: "{{ item.slug }}"
+    sections:
+      sectionsInfoDetails:
+        label: ' '
+        type: info
+        theme: none
+        text: |
+          ### sous-page(s)
+          Il faut IDÉALEMENT entre 3 et 5 pages
+      drafts:
+        extends: sections/page-simple
+        type: pages
+        label: Brouillon
+        status: draft
+        layout: list
+      listed:
+        extends: sections/page-simple
+        type: pages
+        label: Publié
+        status: listed
+        search: true
