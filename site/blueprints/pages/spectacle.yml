@@ -2,7 +2,7 @@ blueprint: page
 
 title: Project
 
-num: date
+#num: date
 
 icon: 📖
 
