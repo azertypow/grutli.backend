@@ -32,6 +32,9 @@ if (isset($json['pageContent']['content']['htmlcontent_falk'])) {
 if (isset($json['pageContent']['content']['htmldetails'])) {
   $json['pageContent']['content']['htmldetails'] = Utils::blockContentToJson($page->content()->htmldetails()->toBlocks());
 }
+if (isset($json['pageContent']['content']['company'])) {
+  $json['pageContent']['content']['company'] = $page->content()->company()->toStructure()->toArray();
+}
 
 $json['cover'] = array_values( Utils::getImageArrayDataInPage( $page->cover()->toFiles() ) );
 
