@@ -35,6 +35,9 @@ if (isset($json['pageContent']['content']['htmldetails'])) {
 if (isset($json['pageContent']['content']['company'])) {
   $json['pageContent']['content']['company'] = $page->content()->company()->toStructure()->toArray();
 }
+if (isset($json['pageContent']['content']['eventtitle'])) {
+  $json['pageContent']['content']['eventtitle'] = $page->content()->eventtitle()->split();
+}
 
 $json['cover'] = array_values( Utils::getImageArrayDataInPage( $page->cover()->toFiles() ) );
 

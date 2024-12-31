@@ -22,10 +22,19 @@ function getSiteInfo(Kirby\Cms\App $kirby, Kirby\Cms\Site $site): bool|string
 
       $content = $item->content();
 
-      return [
+      $arrayToReturn = [
         'cover' => array_values( Utils::getImageArrayDataInPage( $content->cover()->toFiles() ) ),
         'pageContent'     => $item->toArray(),
       ];
+
+      if (isset($arrayToReturn['pageContent']['content']['company'])) {
+        $arrayToReturn['pageContent']['content']['company'] = $item->content()->company()->toStructure()->toArray();
+      }
+      if (isset($arrayToReturn['pageContent']['content']['eventtitle'])) {
+        $arrayToReturn['pageContent']['content']['eventtitle'] = $item->content()->eventtitle()->split();
+      }
+
+      return $arrayToReturn;
     })->data()),
   ]);
 
