@@ -27,6 +27,17 @@ columns:
           url: "https://grutli.deno.dev/"
           text: "{{ item.name }}"
           value: "{{ item.name }}"
+      externalTicketServiceLink:
+        label: Lien pour la billeterie externe
+        type: link
+        width: 1/2
+        options:
+          - url
+      externalTicketServiceName:
+        label: Texte pour la billeterie externe
+        type: text
+        width: 1/2
+
 
   - width: 1/4
     fields:
@@ -85,6 +96,23 @@ columns:
 
   - width: 1/1
     fields:
+      dateStart:
+        width: 1/4
+        required: true
+        label: Date de début
+        type: date
+        default: now
+        display: YYYY-MM
+      dateEnd:
+        width: 1/4
+        required: true
+        label: Date de fin
+        type: date
+        default: now
+        display: YYYY-MM
+      gap:
+        type: gap
+        width: 1/2
       htmlContent:
         width: 1/2
         type: blocks
