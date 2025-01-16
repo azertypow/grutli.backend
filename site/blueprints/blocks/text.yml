@@ -11,5 +11,4 @@ fields:
       - italic
       - link
       - email
-    nodes:
-      - quote
+    nodes: false

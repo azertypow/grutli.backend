@@ -94,6 +94,7 @@ columns:
           - image
           - video
           - imageGallery
+          - quote
 #          - type: heading
 #            extends: blocks/heading
 #            fields:
