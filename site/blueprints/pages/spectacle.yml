@@ -102,14 +102,12 @@ columns:
         label: Date de début
         type: date
         default: now
-        display: YYYY-MM
       dateEnd:
         width: 1/4
         required: true
         label: Date de fin
         type: date
         default: now
-        display: YYYY-MM
       gap:
         type: gap
         width: 1/2
