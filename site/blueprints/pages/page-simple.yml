@@ -19,10 +19,12 @@ columns:
         type: gap
         width: 1/2
       showInNavigation:
+        label: Afficher dans la navigation
         width: 1/4
         type: toggle
         default: false
       showInHome:
+        label: Afficher dans sur la home
         width: 1/4
         type: toggle
         default: false
