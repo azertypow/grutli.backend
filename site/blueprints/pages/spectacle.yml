@@ -130,6 +130,7 @@ columns:
           - image
           - video
           - imageGallery
+          - link
           - quote
 #          - type: heading
 #            extends: blocks/heading
@@ -147,6 +148,7 @@ columns:
           - image
           - video
           - imageGallery
+          - link
           - quote
       #          - type: heading
       #            extends: blocks/heading

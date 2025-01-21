@@ -37,6 +37,7 @@ columns:
           - image
           - video
           - imageGallery
+          - link
       htmlContent_falk:
         width: 1/2
         type: blocks
@@ -46,7 +47,7 @@ columns:
           - image
           - video
           - imageGallery
-
+          - link
   - width: 1/1
     sections:
       sectionsInfoDetails:

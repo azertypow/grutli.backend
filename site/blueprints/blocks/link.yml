@@ -1,0 +1,20 @@
+title: Lien
+
+icon: merge
+
+preview: fields
+wysiwyg: true
+
+fields:
+
+  text:
+    label:
+      fr: Texte
+      en: Text
+    type: text
+
+  link:
+    label:
+      fr: Lien
+      en: Link
+    type: url
