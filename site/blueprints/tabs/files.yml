@@ -1,0 +1,12 @@
+label: Fichiers
+
+icon: file
+pages: false
+
+fields:
+  files:
+    label:
+      en: Files
+      fr: Fichiers
+    type: files
+    layout: list

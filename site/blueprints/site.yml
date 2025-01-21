@@ -1,46 +1,54 @@
 title: Site
 
-columns:
-  - width: 1/4
-    sections:
-      sectionsInfoDetails:
-        label: ' '
-        type: info
-        theme: none
-        text: |
-          ### Informations générales
-      placeList:
-        label: "Salles et lieux"
-        type: pages
-        status: listed
-        image: false
-        templates: places
-        layout: cards
-        size: medium
-      infomaniakTicketInformation:
-        label: "Informations liées à la billetterie infomaniak"
-        type: pages
-        status: listed
-        image: false
-        templates: infomaniak-tickets-informations
-        layout: cards
-        size: medium
-  - width: 3/4
-    sections:
-      sectionsInfoPages:
-        label: ' '
-        type: info
-        theme: none
-        text: |
-          ### Pages
-      pages_spectacles:
-        label: Spectacles
-        type: pages
-        template:
-          - spectacles
-      pages_page:
-        label: Pages
-        type: pages
-        template:
-          - page-simple
-          - page-internal-links
+tabs:
+  content:
+    label:
+      fr: Contenu
+
+    icon: text
+
+    columns:
+      - width: 1/4
+        sections:
+          sectionsInfoDetails:
+            label: ' '
+            type: info
+            theme: none
+            text: |
+              ### Informations générales
+          placeList:
+            label: "Salles et lieux"
+            type: pages
+            status: listed
+            image: false
+            templates: places
+            layout: cards
+            size: medium
+          infomaniakTicketInformation:
+            label: "Informations liées à la billetterie infomaniak"
+            type: pages
+            status: listed
+            image: false
+            templates: infomaniak-tickets-informations
+            layout: cards
+            size: medium
+      - width: 3/4
+        sections:
+          sectionsInfoPages:
+            label: ' '
+            type: info
+            theme: none
+            text: |
+              ### Pages
+          pages_spectacles:
+            label: Spectacles
+            type: pages
+            template:
+              - spectacles
+          pages_page:
+            label: Pages
+            type: pages
+            template:
+              - page-simple
+              - page-internal-links
+  restaurant: tabs/files
