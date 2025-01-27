@@ -1,0 +1,37 @@
+blueprint: page
+
+title: Nouvelles
+
+icon: journal
+
+options:
+  changeSlug: false
+  delete: false
+  changeTitle: false
+  sort: false
+  changeStatus: false
+  duplicate: false
+
+
+status:
+  listed:
+    label: Publié
+    text: L'article est répertoriée dans l'archive et en ligne.
+
+columns:
+  - width: 2/3
+    fields:
+      news:
+        label: Nouvelles / information à mettre en avant
+        type: structure
+        fields:
+          text:
+            label: nom
+            type: writer
+            inline: true
+            marks:
+              - italic
+              - link
+          link:
+            label: liens externe
+            type: url

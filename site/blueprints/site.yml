@@ -32,6 +32,15 @@ tabs:
             templates: infomaniak-tickets-informations
             layout: cards
             size: medium
+          news:
+            label: "Nouvelles mise en avant"
+            type: pages
+            status: listed
+            image: false
+            templates: news
+            layout: cards
+            size: medium
+
       - width: 3/4
         sections:
           sectionsInfoPages:
