@@ -18,7 +18,7 @@ columns:
   - width: 3/4
     fields:
       eventTitle:
-        label: Nom de l'événement dans la billeterie infomaniak
+        label: Nom de l'événement dans la billetterie infomaniak
         type: multiselect
 #        required: true
 #        max: 1
@@ -28,13 +28,13 @@ columns:
           text: "{{ item.name }}"
           value: "{{ item.name }}"
       externalTicketServiceLink:
-        label: Lien pour la billeterie externe
+        label: Lien pour la billetterie externe
         type: link
         width: 1/2
         options:
           - url
       externalTicketServiceName:
-        label: Texte pour la billeterie externe
+        label: Texte pour la billetterie externe
         type: text
         width: 1/2
 
@@ -138,7 +138,7 @@ columns:
       htmlContent_falk:
         width: 1/2
         type: blocks
-        label: Contenu FALK
+        label: Contenu FALC
         fieldsets:
           - text
           - image

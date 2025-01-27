@@ -41,7 +41,7 @@ columns:
       htmlContent_falk:
         width: 1/2
         type: blocks
-        label: Contenu FALK
+        label: Contenu FALC
         fieldsets:
           - textWithTitle
           - image
