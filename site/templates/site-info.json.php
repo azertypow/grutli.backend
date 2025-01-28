@@ -18,7 +18,7 @@ function getSiteInfo(Kirby\Cms\App $kirby, Kirby\Cms\Site $site): bool|string
         'pageContent'     => $item->toArray(),
       ];
     })->data()),
-    'spectacles' => array_values($site->find('/spectacles')->children()->map(function($item) use ($kirby){
+    'spectacles' => array_values($site->find('/spectacles')->children()->sortBy('dateStart', 'desc')->map(function($item) use ($kirby){
 
       $content = $item->content();
 
