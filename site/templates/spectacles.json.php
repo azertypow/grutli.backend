@@ -12,7 +12,7 @@ use Kirby\Cms\Site;
 
 $json = [];
 
-$children = $page->children()->listed()->map(function ($item){
+$children = $page->children()->listed()->sortBy('dateStart', 'desc')->map(function ($item){
 
   $content = $item->content();
 
