@@ -1,0 +1,35 @@
+blueprint: page
+
+name: Section contenu
+icon: text
+wysiwyg: true
+preview: fields
+
+fields:
+  titre:
+    required: true
+    type: writer
+    inline: true
+    marks:
+      italic
+  htmlContent:
+    required: true
+    width: 1/2
+    type: blocks
+    label: Contenu
+    fieldsets:
+      - textWithTitle
+      - image
+      - video
+      - imageGallery
+      - link
+  htmlContent_falk:
+    width: 1/2
+    type: blocks
+    label: Contenu FALC
+    fieldsets:
+      - textWithTitle
+      - image
+      - video
+      - imageGallery
+      - link
