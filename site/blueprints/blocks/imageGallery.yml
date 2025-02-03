@@ -4,6 +4,11 @@ name: Gallerie
 icon: image
 preview: fields
 fields:
+  title:
+    type: writer
+    inline: true
+    marks:
+      italic
   image:
     label: field.blocks.image.name
     type: files
