@@ -1,7 +1,7 @@
 type: pages
 label: Page simple
 info: "{{ page.published }}"
-template: page-simple
+template: page-simple__subpage
 empty: pas de pages…
 #sortBy: date desc
 size: tiny

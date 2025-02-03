@@ -12,25 +12,11 @@ use Kirby\Cms\Site;
 
 $json = [];
 
-$children = $page->children()->listed()->map(function ($item){
-
-  $content = $item->content();
-
-  return [
-    'cover' => array_values( Utils::getImageArrayDataInPage( $content->cover()->toFiles() ) ),
-    'pageContent'     => $item->toArray(),
-  ];
-})->data();
-
 $json['pageContent'] = $page->toArray();
-
-if (isset($json['pageContent']['content']['htmldetails'])) {
-  $json['pageContent']['content']['htmldetails'] = Utils::blockContentToJson($page->content()->htmldetails()->toBlocks());
-}
 
 if (isset($json['pageContent']['content']['content'])) {
 
-  $content = $page->content()->content()->toBlocks()->map(function ($item) {
+   $content = $page->content()->content()->toBlocks()->map(function ($item) {
 
     $toReturn = $item->toArray();
 
@@ -48,6 +34,6 @@ if (isset($json['pageContent']['content']['content'])) {
   $json['pageContent']['content']['content'] = array_values($content);
 }
 
-$json['childrenDetails'] = array_values( $children );
+
 
 echo json_encode($json);

@@ -1,6 +1,6 @@
 blueprint: page
 
-title: Page simple
+title: Sous page
 
 icon: page
 
@@ -34,23 +34,3 @@ columns:
         fieldsets:
           - section-block-content
           - section-block-link-to-event
-  - width: 1/1
-    sections:
-      sectionsInfoDetails:
-        label: ' '
-        type: info
-        theme: none
-        text: |
-          ### sous-page(s)
-      drafts:
-        extends: sections/page-simple
-        type: pages
-        label: Brouillon
-        status: draft
-        layout: list
-      listed:
-        extends: sections/page-simple
-        type: pages
-        label: Publié
-        status: listed
-        search: true
