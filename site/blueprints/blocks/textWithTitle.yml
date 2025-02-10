@@ -16,5 +16,6 @@ fields:
       - italic
       - link
       - email
+      - code
     nodes:
       - heading
