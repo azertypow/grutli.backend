@@ -7,7 +7,7 @@ preview: fields
 
 fields:
   titre:
-    required: true
+    required: false
     type: writer
     inline: true
     marks:
