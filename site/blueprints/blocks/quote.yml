@@ -1,0 +1,26 @@
+name: field.blocks.quote.name
+icon: quote
+wysiwyg: true
+preview: quote
+fields:
+  text:
+    label: field.blocks.quote.text.label
+    placeholder: field.blocks.quote.text.placeholder
+    type: writer
+    inline: true
+    marks:
+      - bold
+      - link
+      - email
+      - code
+    icon: quote
+  citation:
+    label: field.blocks.quote.citation.label
+    placeholder: field.blocks.quote.citation.placeholder
+    type: writer
+    marks:
+      - link
+      - email
+      - code
+    inline: true
+    icon: user
