@@ -1,21 +1,16 @@
 blueprint: page
 
-name: Section lien vers une page
+name: Section lien vers un événement
 icon: text
 wysiwyg: true
 preview: fields
 
 fields:
-  titre:
-    required: true
-    type: writer
-    inline: true
-    marks:
-      italic
   linked_spectacle:
     required: true
     label: Spectacle(s)
     type: multiselect
+    max: 1
     options:
       type: query
       query: site.find('spectacles').childrenAndDrafts.template('spectacle')
