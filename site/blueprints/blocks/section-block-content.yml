@@ -11,7 +11,7 @@ fields:
     type: writer
     inline: true
     marks:
-      italic
+      - italic
   htmlContent:
     required: true
     width: 1/2
