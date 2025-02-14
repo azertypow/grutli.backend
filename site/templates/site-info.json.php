@@ -16,6 +16,26 @@ function getSiteInfo(Kirby\Cms\App $kirby, Kirby\Cms\Site $site): bool|string
       return [
         'cover' => array_values( Utils::getImageArrayDataInPage( $content->cover()->toFiles() ) ),
         'pageContent'     => $item->toArray(),
+        'children' => array_values($item->children()->map(function ($children){
+          return [
+            'title'             => $children->title()->value(),
+            'showinnavigation'  => $children->showinnavigation()->value(),
+            'showinhome'        => $children->showinhome()->value(),
+            'parent'            => [
+                    'title'             => $children->parent()->title()->value(),
+                    'showinnavigation'  => $children->parent()->showinnavigation()->value(),
+                    'showinhome'        => $children->parent()->showinhome()->value(),
+                    'slug'              => $children->parent()->slug(),
+                    'uid'               => $children->parent()->uid(),
+                    'uri'               => $children->parent()->uri(),
+                    'url'               => $children->parent()->url(),
+            ],
+            'slug'              => $children->slug(),
+            'uid'               => $children->uid(),
+            'uri'               => $children->uri(),
+            'url'               => $children->url(),
+          ];
+        })->data()),
       ];
     })->data()),
     'spectacles' => array_values($site->find('/spectacles')->children()->sortBy('dateStart', 'asc')->map(function($item) use ($kirby){
