@@ -1,0 +1,50 @@
+blueprint: page
+
+name: Section événement extérieur
+icon: text
+wysiwyg: true
+preview: fields
+
+fields:
+  titre:
+    required: true
+    type: writer
+    inline: true
+    marks:
+      - italic
+
+  company:
+    label: Compagnie(s) / Mise en scène / Texte(s)
+    type: structure
+    fields:
+      authors_name:
+        label: nom
+        type: text
+      authors_link:
+        label: liens externe
+        type: url
+
+  dateStart:
+    width: 1/4
+    required: true
+    label: Date de début
+    type: date
+    default: now
+
+  dateEnd:
+    width: 1/4
+    required: true
+    label: Date de fin
+    type: date
+    default: now
+
+  eventInfo:
+    label: Informations complémentaires
+    type: text
+
+  linkTo:
+    label: Lien vers l'événement externe
+    type: link
+    width: 1/2
+    options:
+      - url
