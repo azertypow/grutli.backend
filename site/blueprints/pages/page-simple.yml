@@ -15,6 +15,43 @@ options:
 columns:
   - width: 1/1
     fields:
+      showInCalendar:
+        label: Afficher dans le programme
+        type: toggle
+        width: 3/6
+
+      dateStart:
+        width: 1/6
+        required: false
+        label: Date de début
+        type: date
+        default: now
+        when:
+          showInCalendar: true
+
+      dateEnd:
+        width: 1/6
+        required: false
+        label: Date de fin
+        type: date
+        default: now
+        when:
+          showInCalendar: true
+
+      gapCol_01:
+        type: gap
+        width: 1/6
+        when:
+          showInCalendar: true
+
+      gapCol_02:
+        type: gap
+        width: 3/6
+        when:
+          showInCalendar: false
+
+
+
       gapCol:
         type: gap
         width: 1/2
