@@ -27,6 +27,11 @@ columns:
           url: "https://grutli.deno.dev/"
           text: "{{ item.name }}"
           value: "{{ item.name }}"
+
+      eventInfo:
+        label: Informations complémentaires
+        type: text
+
       externalTicketServiceLink:
         label: Lien pour la billetterie externe
         type: link
