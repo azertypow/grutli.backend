@@ -35,3 +35,7 @@ columns:
           link:
             label: liens externe
             type: url
+
+          show:
+            label: afficher sur le site?
+            type: toggle
