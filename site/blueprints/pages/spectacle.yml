@@ -38,6 +38,13 @@ columns:
         width: 1/2
         options:
           - url
+      relaxDates:
+        label: Dates pour sortie relax
+        type: structure
+        fields:
+          relaxDateItem:
+            type: date
+
       externalTicketServiceName:
         label: Texte pour la billetterie externe
         type: text
