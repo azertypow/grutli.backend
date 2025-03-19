@@ -17,7 +17,11 @@ columns:
     fields:
       gapCol:
         type: gap
-        width: 1/2
+        width: 1/4
+      templateWith_3_coll:
+        label: Temple avec 3 colonnes
+        type: toggle
+        width: 1/4
       showInNavigation:
         label: Afficher dans la navigation
         width: 1/4
