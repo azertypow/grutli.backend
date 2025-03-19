@@ -39,6 +39,12 @@ columns:
           showInCalendar: true
 
 
+      gapCol_00:
+        type: gap
+        width: 1/6
+        when:
+          showInCalendar: false
+
       gapCol_01:
         type: gap
         width: 1/6
