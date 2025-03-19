@@ -26,6 +26,8 @@ columns:
         label: Date de début
         type: date
         default: now
+        when:
+          showInCalendar: true
 
       dateEnd:
         width: 1/6
@@ -33,6 +35,9 @@ columns:
         label: Date de fin
         type: date
         default: now
+        when:
+          showInCalendar: true
+
 
       gapCol_01:
         type: gap
