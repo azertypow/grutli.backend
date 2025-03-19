@@ -23,6 +23,7 @@ fields:
       - video
       - imageGallery
       - link
+      - quote
   htmlContent_falk:
     width: 1/2
     type: blocks
