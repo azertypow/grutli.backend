@@ -33,7 +33,7 @@ class Utils
             'caption' => $file->caption()->value(),
             'alt' => $file->alt()->value(),
             'link' => $file->link()->value(),
-            'photoCredit' => $file->photoCredit()->value(),
+            'photographer' => $file->photographer()->value(),
             'url' => $file->url(),
             'mediaUrl' => $file->mediaUrl(),
             'width' => $file->width(),
