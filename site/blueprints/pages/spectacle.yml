@@ -35,7 +35,7 @@ columns:
 
   - width: 1/4
     fields:
-      saison:
+      season:
         label: Saison
         type: select
         required: true
