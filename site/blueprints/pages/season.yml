@@ -1,0 +1,38 @@
+title: Saison
+
+num: zero
+
+status:
+  draft:
+    label: actif
+    text: Une saison n'a pas de status, il est donc toujours actif
+
+options:
+  delete: false
+  changeStatus: false
+  changeTitle: true
+  sort: false
+  duplicate: false
+  changeSlug: false
+  changeTemplate: false
+
+columns:
+  - width: 2/3
+    fields:
+      dateInformation:
+        label: Information date de saison
+        type: text
+        width: 1/1
+        required: true
+
+  - width: 1/3
+    fields:
+      statut:
+        label: Statut
+        type: select
+        required: true
+        options:
+          en-cours: En cours
+          passe: Passée
+          a-venir: À venir
+        default: a-venir

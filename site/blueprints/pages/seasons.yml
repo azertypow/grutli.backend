@@ -1,0 +1,34 @@
+blueprint: page
+
+title: Saisons
+
+icon: ticket
+
+options:
+  changeSlug: false
+  delete: false
+  changeTitle: true
+  sort: false
+  changeStatus: false
+  duplicate: false
+
+
+status:
+  listed:
+    label: Publié
+    text: L'article est répertoriée dans l'archive et en ligne.
+
+
+sections:
+  saisons:
+    type: pages
+    templates: season
+    headline: Liste des saisons
+    layout: table
+    columns:
+      dateInformation:
+        label: Information sur la date
+        value: "{{ page.dateInformation }}"
+      statut:
+        label: Statut
+        value: "{{ page.statut }}"

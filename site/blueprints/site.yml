@@ -24,6 +24,14 @@ tabs:
             templates: places
             layout: cards
             size: medium
+          saisonList:
+            label: "Saisons"
+            type: pages
+            status: listed
+            image: false
+            templates: seasons
+            layout: cards
+            size: medium
           infomaniakTicketInformation:
             label: "Informations liées à la billetterie infomaniak"
             type: pages

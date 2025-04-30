@@ -35,6 +35,15 @@ columns:
 
   - width: 1/4
     fields:
+      saison:
+        label: Saison
+        type: select
+        required: true
+        options:
+          type: query
+          query: site.find('saisons').childrenAndDrafts.template('season')
+          text: "{{ item.title }}"
+          value: "{{ item.slug }}"
       isCover:
         label: Reprise
         type: toggle
