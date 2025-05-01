@@ -5,13 +5,16 @@ num: zero
 status:
   draft:
     label: actif
-    text: Une saison n'a pas de status, il est donc toujours actif
+    text: Une saison n'a pas de logique de status, il est donc toujours actif
+  listed:
+    label: actif
+    text: Une saison n'a pas de logique de status, il est donc toujours actif
 
 options:
   delete: false
-  changeStatus: false
+  changeStatus: true
   changeTitle: true
-  sort: false
+  sort: true
   duplicate: false
   changeSlug: false
   changeTemplate: false
@@ -23,6 +26,7 @@ columns:
         label: Information date de saison
         type: text
         width: 1/1
+        default: information de date à remplire…
         required: true
 
   - width: 1/3

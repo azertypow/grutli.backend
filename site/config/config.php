@@ -33,5 +33,17 @@ return [
     ],
     'panel' => [
         'css' => 'site/plugins/custom-panel/css/main.css'
+    ],
+    'hooks' => [
+        'page.create:after' => function ($page) {
+            if ($page->intendedTemplate()->name() == 'season') {
+                try {
+                    $page = $page->changeStatus('listed');
+                } catch (Exception $e) {
+                    // Optionnel : log ou silence en prod
+                     error_log($e->getMessage());
+                }
+            }
+        }
     ]
 ];
