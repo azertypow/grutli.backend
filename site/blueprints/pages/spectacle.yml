@@ -138,13 +138,6 @@ columns:
           - imageGallery
           - link
           - quote
-#          - type: heading
-#            extends: blocks/heading
-#            fields:
-#              level:
-#                options:
-#                  - h2
-#                  - h3
       htmlContent_falk:
         width: 1/2
         type: blocks
@@ -156,13 +149,6 @@ columns:
           - imageGallery
           - link
           - quote
-      #          - type: heading
-      #            extends: blocks/heading
-      #            fields:
-      #              level:
-      #                options:
-      #                  - h2
-      #                  - h3
       details:
         label: Production(s) / Coproduction(s) / Soutien(s)
         type: writer
@@ -170,20 +156,8 @@ columns:
           - italic
         nodes: false
 
-#      galleryProject:
-#        type: blocks
-#        label: Galerie
-#        fieldsets:
-#          - image
       htmlDetails:
         type: blocks
         label: Détails
         fieldsets:
           - text
-
-#  - width: 1/3
-#    sections:
-#      meta:
-#        type: fields
-#        fields:
-
