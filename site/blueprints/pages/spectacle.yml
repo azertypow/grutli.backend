@@ -105,21 +105,28 @@ columns:
 
   - width: 1/1
     fields:
-      dateStart:
-        width: 1/4
-        required: true
-        label: Date de début
-        type: date
-        default: now
-      dateEnd:
-        width: 1/4
-        required: true
-        label: Date de fin
-        type: date
-        default: now
-      gap:
-        type: gap
-        width: 1/2
+      list_of_dates:
+        label: liste des dates
+        type: structure
+        fields:
+          list_of_dates_date:
+            required: true
+            label: Jour
+            type: date
+          list_of_dates_hour:
+            label: Heure
+            required: false
+            type: time
+            display: HH:mm
+          list_of_dates_ticket_link:
+            type: link
+            label: lien vers la billetterie
+            options:
+              - url
+          list_of_dates_is_relax:
+            label: sortie relax?
+            type: toggle
+
       htmlContent:
         width: 1/2
         type: blocks
