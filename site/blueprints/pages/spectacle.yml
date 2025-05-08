@@ -138,6 +138,7 @@ columns:
           - imageGallery
           - link
           - quote
+          - break
       htmlContent_falk:
         width: 1/2
         type: blocks
@@ -149,6 +150,7 @@ columns:
           - imageGallery
           - link
           - quote
+          - break
       details:
         label: Production(s) / Coproduction(s) / Soutien(s)
         type: writer
