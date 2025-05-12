@@ -127,6 +127,23 @@ columns:
             label: sortie relax?
             type: toggle
 
+      htmlDetails:
+        type: blocks
+        label: Détails des dates et horaires
+        width: 3/4
+        empty: Informations sur la durée, avec ou sans entracte et les horaires. (voir informations en bleu)
+        fieldsets:
+          - text
+      htmlDetails_info:
+        type: info
+        label: " "
+        width: 1/4
+        text: |
+          Durée HHhMM, avec ou sans entracte
+
+          lundi-samedi à HHhMM, dimanche à HHMM.
+
+
       htmlContent:
         width: 1/2
         type: blocks
@@ -157,9 +174,3 @@ columns:
         marks:
           - italic
         nodes: false
-
-      htmlDetails:
-        type: blocks
-        label: Détails
-        fieldsets:
-          - text
