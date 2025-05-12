@@ -106,7 +106,7 @@ columns:
   - width: 1/1
     fields:
       list_of_dates:
-        label: liste des dates
+        label: Liste des dates
         type: structure
         fields:
           list_of_dates_date:
