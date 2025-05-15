@@ -14,7 +14,7 @@ fields:
       - italic
 
   company:
-    label: Compagnie(s) / Mise en scène / Texte(s)
+    label: Compagnie(s) / Mise en scène
     type: structure
     fields:
       authors_name:
