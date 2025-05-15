@@ -20,6 +20,7 @@ columns:
       eventInfo:
         label: Informations pour la vignette du spectacle
         type: text
+        help: Text repris pour la vignette d'événement seulement (ne ré-apparait pas dans le contenu de la page)
 
       externalTicketServiceLink:
         label: Lien pour la billetterie
