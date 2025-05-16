@@ -1,0 +1,17 @@
+blueprint: page
+
+title: Les diffusions d'événements
+
+icon: ticket
+
+columns:
+  - width: 1/1
+    sections:
+      listed:
+        label: Pages
+        type: pages
+        layout: cards
+        image:
+          cover: true
+        template:
+          - diffusion

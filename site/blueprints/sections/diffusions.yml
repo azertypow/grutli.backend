@@ -1,0 +1,15 @@
+type: pages
+label: Diffusions
+parent: kirby.page("diffusion")
+info: "{{ page.published }}"
+template: diffusion
+empty: pas de d'évènement de diffusion…
+sortBy: dateStart asc
+size: tiny
+limit: 500
+layout: cardlets
+image:
+  query: page.cover.toFile
+  cover: true
+  ratio: 3/1
+

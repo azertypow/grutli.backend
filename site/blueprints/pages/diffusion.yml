@@ -1,0 +1,68 @@
+blueprint: page
+
+title: Évèvenement pour la diffusion
+
+#num: date
+
+icon: 📖
+
+status:
+  draft:
+    label: Brouillon
+    text: L'événement est toujours en mode brouillon. Elle ne peut être vue que par les éditeurs ayant accès à l'administration.
+  listed:
+    label: Publié
+    text: L'événement est en ligne.
+
+columns:
+  - width: 3/4
+    fields:
+      eventInfo:
+        label: Informations pour la vignette d'événement
+        type: text
+        help: Text repris pour la vignette d'événement seulement (ne ré-apparait pas dans le contenu de la page)
+
+      event_intro:
+        label: Texte d'introduction
+        type: writer
+        help: Text repris pour la vignette d'événement ET dans le contenu
+
+  - width: 1/2
+    fields:
+      company:
+        label: Compagnie(s) / Mise en scène
+        type: structure
+        fields:
+          authors_name:
+            label: nom
+            type: text
+          authors_link:
+            label: liens externe
+            type: url
+
+  - width: 1/1
+    fields:
+      htmlContent:
+        width: 1/2
+        type: blocks
+        label: Contenu
+        fieldsets:
+          - textWithTitle
+          - image
+          - video
+          - imageGallery
+          - link
+          - quote
+          - break
+      htmlContent_falk:
+        width: 1/2
+        type: blocks
+        label: Contenu FALC
+        fieldsets:
+          - textWithTitle
+          - image
+          - video
+          - imageGallery
+          - link
+          - quote
+          - break
