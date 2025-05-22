@@ -142,9 +142,6 @@ columns:
         text: |
           Durée HHhMM, avec ou sans entracte
 
-          lundi-samedi à HHhMM, dimanche à HHMM.
-
-
       htmlContent:
         width: 1/2
         type: blocks
