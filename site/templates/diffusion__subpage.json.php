@@ -20,8 +20,11 @@ $children = $page->children()->listed()->map(function ($item){
   $content = $item->content();
 
   return [
-    'cover' => array_values( Utils::getImageArrayDataInPage( $content->cover()->toFiles() ) ),
-    'pageContent'     => $item->toArray(),
+//    'pageContent' => $item->toArray(),
+    'title'         => $content->title()->value(),
+    'eventInfo'     => $content->eventInfo()->value(),
+    'event_intro'   => $content->event_intro()->value(),
+    'company'       => $content->company()->toStructure()->toArray(),
   ];
 })->data();
 
