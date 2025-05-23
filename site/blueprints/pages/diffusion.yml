@@ -25,6 +25,9 @@ columns:
       event_intro:
         label: Texte d'introduction
         type: writer
+        marks:
+          - italic
+        nodes: false
         help: Text repris pour la vignette d'événement ET dans le contenu
 
   - width: 1/2
