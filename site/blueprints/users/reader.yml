@@ -1,0 +1,30 @@
+title: Lecteur
+description: Ce rôle permet uniquement la consultation du contenu via le Panel.
+
+permissions:
+  access:
+    panel: true
+    settings: false
+    users: false
+  site:
+    update: false
+  pages:
+    create: false
+    update: false
+    delete: false
+    changeSlug: false
+    changeStatus: false
+    changeTemplate: false
+    changeTitle: false
+  files:
+    create: false
+    update: false
+    delete: false
+    replace: false
+  user:
+    changeEmail: false
+    changeLanguage: false
+    changeName: false
+    changePassword: false
+    changeRole: false
+    delete: false
