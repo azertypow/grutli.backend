@@ -22,6 +22,7 @@ $children = $page->children()->listed()->map(function ($item){
   return [
 //    'pageContent' => $item->toArray(),
     'title'         => $content->title()->value(),
+    'slug'          => $item->slug(),
     'eventInfo'     => $content->eventInfo()->value(),
     'event_intro'   => $content->event_intro()->value(),
     'company'       => $content->company()->toStructure()->toArray(),
