@@ -106,6 +106,18 @@ columns:
 
   - width: 1/1
     fields:
+      dateStart:
+        width: 1/4
+        required: true
+        label: Date de début
+        type: date
+        default: now
+      dateEnd:
+        width: 1/4
+        required: true
+        label: Date de fin
+        type: date
+        default: now
       list_of_dates:
         label: Liste des dates
         type: structure

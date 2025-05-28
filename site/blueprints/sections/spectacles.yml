@@ -4,7 +4,7 @@ parent: kirby.page("spectacles")
 info: "{{ page.published }}"
 template: spectacle
 empty: pas de spectacles…
-sortBy: dateStart asc
+sortBy: list_of_dates.toStructure.first.list_of_dates_date asc
 size: tiny
 limit: 500
 layout: cardlets
