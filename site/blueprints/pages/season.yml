@@ -40,3 +40,7 @@ columns:
           passe: Passée
           a-venir: À venir
         default: a-venir
+      video_url:
+        label: lien de la video en arriere plan
+        type: url
+        required: true
