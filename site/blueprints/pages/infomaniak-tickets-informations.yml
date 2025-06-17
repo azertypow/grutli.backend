@@ -25,10 +25,6 @@ status:
 columns:
   - width: 1/1
     fields:
-      shops:
-        type: structure
-        fields:
-          name:
-            type: text
-          url:
-            type: url
+      shop:
+        type: url
+        label: Lien billetterie de saison

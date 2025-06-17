@@ -56,6 +56,7 @@ function getSiteInfo(Kirby\Cms\App $kirby, Kirby\Cms\Site $site): bool|string
 
       return $arrayToReturn;
     })->data()),
+    'ticket_infos' => $site->find('/billetterie-infomaniak')->content()->shop()->value()
   ]);
 
 }
