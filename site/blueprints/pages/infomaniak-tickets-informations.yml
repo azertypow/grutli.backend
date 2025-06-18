@@ -32,7 +32,15 @@ columns:
         type: url
         label: Lien vers l'abonnement de saison
         width: 1/2
+        required: true
       subscription_text:
         type: text
         label: Texte bouton vers l'abonnement de saison
         width: 1/2
+        required: true
+      subscription_toggle:
+        type: toggle
+        label: afficher la bouton?
+        text:
+          - "masquer"
+          - "afficher"
