@@ -28,3 +28,9 @@ columns:
       shop:
         type: url
         label: Lien billetterie de saison
+      subscription_link:
+        type: url
+        label: Lien vers l'abonnement de saison
+      subscription_text:
+        type: text
+        label: Texte bouton vers l'abonnement de saison
