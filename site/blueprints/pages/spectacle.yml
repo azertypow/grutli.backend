@@ -86,14 +86,6 @@ columns:
           authors_link:
             label: liens externe
             type: url
-      linked_spectacle:
-        label: Spectacle(s) lié(s)
-        type: multiselect
-        options:
-          type: query
-          query: site.find('spectacles').childrenAndDrafts.template('spectacle')
-          text: "{{ item.title }}"
-          value: "{{ item.slug }}"
 
   - width: 2/3
     fields:
