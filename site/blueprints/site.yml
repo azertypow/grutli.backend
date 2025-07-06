@@ -48,6 +48,14 @@ tabs:
             templates: news
             layout: cards
             size: medium
+          global_player:
+            label: "Player SoundCloud général"
+            type: pages
+            status: listed
+            image: false
+            templates: global_soundcloud_player
+            layout: cards
+            size: medium
 
       - width: 3/4
         sections:

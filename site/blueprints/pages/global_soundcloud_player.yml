@@ -1,0 +1,38 @@
+blueprint: page
+
+title: Player SoundCloud Général
+
+num: date
+
+icon: 📖
+
+options:
+  sort: false
+  delete: false
+  changeSlug: false
+  changeTitle: false
+  changeStatus: false
+  duplicate: false
+
+status:
+  draft:
+    label: Brouillon
+    text: Ne peut être vue que par les éditeurs ayant accès à l'administration.
+  listed:
+    label: Publié
+    text: en ligne.
+
+columns:
+  - width: 1/1
+    fields:
+      soundcloud_url:
+        type: url
+        label: Lien SoundCloud
+      text:
+        type: text
+      transcription_file:
+        type: files
+        label: Transcription
+        multiple: false
+        uploads: transcription-file
+        help: "Téléversez Ajouter un document de transcription Word ou PDF."
