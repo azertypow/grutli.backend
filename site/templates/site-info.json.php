@@ -56,6 +56,17 @@ function getSiteInfo(Kirby\Cms\App $kirby, Kirby\Cms\Site $site): bool|string
 
       return $arrayToReturn;
     })->data()),
+
+    'global_soundcloud_player' => [
+      'soundcloud_url'      => $site->find('/player-soundcloud-general')->content()->soundcloud_url()->value(),
+      'text'                => $site->find('/player-soundcloud-general')->content()->text()->value(),
+      'transcription_file'  =>
+        $site->find('/player-soundcloud-general')->content()->transcription_file()->toFile() ?
+          $site->find('/player-soundcloud-general')->content()->transcription_file()->toFile()->url()
+          : null,
+    ]
+
+
   ]);
 
 }
