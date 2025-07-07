@@ -11,6 +11,7 @@ options:
   changeTitle: false
   changeStatus: false
   duplicate: false
+  move: false
 
 columns:
   - width: 1/1

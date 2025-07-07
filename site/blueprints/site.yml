@@ -68,11 +68,13 @@ tabs:
           pages_spectacles:
             label: Spectacles
             type: pages
+            status: listed
             template:
               - spectacles
           pages_diffusion:
             label: Diffusion
             type: pages
+            status: listed
             template:
               - diffusions
           pages_page:
