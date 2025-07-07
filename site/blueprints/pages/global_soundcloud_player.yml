@@ -28,7 +28,9 @@ columns:
       soundcloud_url:
         type: url
         label: Lien SoundCloud
+        placeholder: https://soundcloud.com/scenes-du-grutli-2025/sets/presentation-de-saison-les-racines-du-ciel
       text:
+        label: Texte / Titre
         type: text
       transcription_file:
         type: files
