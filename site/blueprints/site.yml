@@ -56,6 +56,16 @@ tabs:
             templates: global_soundcloud_player
             layout: cards
             size: medium
+          newsletter_link:
+            label: Lien Inscription Actualité
+            type: info
+            theme: text
+            text: |
+              Lien pour arriver directement sur le module d'inscription aux listes de&nbsp;mails:
+
+              [grutli.ch/?newsletter=true](https://grutli.ch/?newsletter=true)
+
+
 
       - width: 3/4
         sections:
