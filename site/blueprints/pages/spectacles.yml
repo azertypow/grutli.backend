@@ -31,3 +31,5 @@ columns:
         label: Publié
         status: listed
         search: true
+        info: " {{ page.season }}"
+        sortBy: dateEnd
