@@ -32,4 +32,5 @@ columns:
         status: listed
         search: true
         info: " {{ page.season }}"
-        sortBy: dateEnd
+        sortBy: dateEnd desc
+
