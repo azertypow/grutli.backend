@@ -87,15 +87,6 @@ columns:
             label: liens externe
             type: url
 
-  - width: 2/3
-    fields:
-      peoples:
-        label: Distribution
-        type: writer
-        marks:
-          - italic
-        nodes: false
-
   - width: 1/1
     fields:
       dateStart:
