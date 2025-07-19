@@ -23,6 +23,12 @@ $children = $page->children()->listed()->map(function ($item){
 })->data();
 
 $json['pageContent'] = $page->toArray();
+if (isset($json['pageContent']['content']['youtube_links'])) {
+  $json['pageContent']['content']['youtube_links'] = $page->content()->youtube_links()->toStructure()->toArray();
+}
+if (isset($json['pageContent']['content']['gallery'])) {
+  $json['pageContent']['content']['gallery'] = array_values( Utils::getImageArrayDataInPage( $page->content()->gallery()->toFiles() ) );
+}
 if (isset($json['pageContent']['content']['htmlcontent'])) {
   $json['pageContent']['content']['htmlcontent'] = Utils::blockContentToJson($page->content()->htmlcontent()->toBlocks());
 }

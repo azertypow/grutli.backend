@@ -15,13 +15,68 @@ status:
     text: Le spectacle est en ligne.
 
 columns:
+
   - width: 3/4
     fields:
-      eventInfo:
-        label: Informations pour la vignette du spectacle
-        type: text
-        help: Text repris pour la vignette d'événement seulement (ne ré-apparait pas dans le contenu de la page)
+      title_media:
+        label: 🔷 Medias
+        type: headline
 
+      cover:
+        type: files
+        required: true
+        label: Image de couverture
+        help: Image de couverture à gauche
+        extends: files/imageOnlyOne
+        width: 2/3
+        layout: cards
+        image:
+          back: white
+
+      gallery:
+        type: files
+        label: Galerie
+        help: Galerie d'image sur la gauche
+        extends: files/imageMulti
+        width: 1/2
+        layout: cardlets
+        image:
+          back: black
+
+      youtube_links:
+        label: Liste lien YouTube
+        type: structure
+        width: 1/2
+        fields:
+          link_url:
+            label: URL
+            type: url
+            required: true
+          link_target:
+            label: Ouvrir dans un nouvel onglet ?
+            type: toggle
+            default: false
+
+
+  - width: 1/4
+    fields:
+      title_params:
+        label: 🟨 Paramètres
+        type: headline
+      showInHome:
+        label: Afficher dans sur la home
+        width: 1/4
+        type: toggle
+        default: false
+
+  - width: 3/4
+    fields:
+      gap_tickets:
+        type: gap
+        width: 1/1
+      title_tickets:
+        label: 🚀 Billetterie
+        type: headline
       externalTicketServiceLink:
         label: Lien pour la billetterie
         type: link
@@ -33,13 +88,19 @@ columns:
         type: text
         width: 1/2
 
-
-  - width: 1/4
+  - width: 3/4
     fields:
+      gap_infos:
+        type: gap
+        width: 1/1
+      title_infos:
+        label: 🟣 Informations
+        type: headline
       season:
         label: Saison
         type: select
         required: true
+        width: 1/2
         options:
           type: query
           query: site.find('saisons').childrenAndDrafts.template('season')
@@ -48,35 +109,24 @@ columns:
       isCover:
         label: Reprise
         type: toggle
-      showInHome:
-        label: Afficher dans sur la home
-        width: 1/4
-        type: toggle
-        default: false
-
-  - width: 1/3
-    fields:
-      cover:
-        type: files
-        required: true
-        label: Image de couverture
-        help: Image de couverture
-        extends: files/imageOnlyOne
-
-  - width: 2/3
-    fields:
+        width: 1/2
       places:
         label: salle(s)
         type: multiselect
+        width: 1/2
         options:
           type: query
           query: site.find('places').childrenAndDrafts.template('place')
           text: "{{ item.title }}"
           value: "{{ item.slug }}"
+      eventInfo:
+        width: 3/4
+        label: Informations pour la vignette du spectacle
+        type: text
+        help: Text repris pour la vignette d'événement seulement (ne ré-apparait pas dans le contenu de la page)
 
-  - width: 1/3
-    fields:
       company:
+        width: 3/4
         label: Compagnie(s) / Mise en scène
         type: structure
         fields:
@@ -87,21 +137,35 @@ columns:
             label: liens externe
             type: url
 
-  - width: 1/1
+
+
+
+
+  - width: 3/4
     fields:
+      gap_dates:
+        type: gap
+        width: 1/1
+      title_dates:
+        type: headline
+        label: 🌍 Dates et horaires
+
       dateStart:
-        width: 1/4
+        width: 1/2
         required: true
         label: Date de début
         type: date
         default: now
+
       dateEnd:
-        width: 1/4
+        width: 1/2
         required: true
         label: Date de fin
         type: date
         default: now
+
       list_of_dates:
+        width: 3/4
         label: Liste des dates
         type: structure
         fields:
@@ -130,12 +194,26 @@ columns:
         empty: Informations sur la durée, avec ou sans entracte et les horaires. (voir informations en bleu)
         fieldsets:
           - text
+
       htmlDetails_info:
         type: info
         label: " "
         width: 1/4
         text: |
           Durée HHhMM, avec ou sans entracte
+
+
+
+
+
+  - width: 1/1
+    fields:
+      gap_content:
+        type: gap
+        width: 1/1
+      title_content:
+        type: headline
+        label: ❇️ Contenu
 
       htmlContent:
         width: 1/2
@@ -149,6 +227,7 @@ columns:
           - link
           - quote
           - break
+
       htmlContent_falk:
         width: 1/2
         type: blocks
