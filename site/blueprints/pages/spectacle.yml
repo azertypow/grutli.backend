@@ -52,11 +52,6 @@ columns:
             label: URL
             type: url
             required: true
-          link_target:
-            label: Ouvrir dans un nouvel onglet ?
-            type: toggle
-            default: false
-
 
   - width: 1/4
     fields:
