@@ -1,21 +1,23 @@
 title: Lecteur
-description: Ce rôle permet uniquement la consultation du contenu via le Panel.
+
+description: |
+  Ce rôle permet d'accéder au contenu et de le modifier
+  <br>Il ne permet pas de supprimer, ajouter, déplacer ou de modifier le status d'une page.
 
 permissions:
   access:
     panel: true
     settings: false
     users: false
-  site:
-    update: false
   pages:
     create: false
-    update: false
     delete: false
     changeSlug: false
     changeStatus: false
     changeTemplate: false
     changeTitle: false
+    duplicate: false
+    move: false
   files:
     create: false
     update: false
@@ -28,3 +30,12 @@ permissions:
     changePassword: false
     changeRole: false
     delete: false
+
+fields:
+  user_role_info:
+    type: info
+    label: Informations
+    theme: none
+    text: |
+      Ce rôle permet d'accéder au contenu et de le modifier
+      Il ne permet pas de supprimer, ajouter, déplacer ou de modifier le status d'une page.

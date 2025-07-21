@@ -1,0 +1,15 @@
+title: Admin
+
+description: |
+  Ce rôle permet d'accéder au contenu et de le modifier et d'ajouter/supprimer certaine page du site.
+  <br>C'est le rôle le plus haut pour l'administration du site.
+
+
+fields:
+  user_role_info:
+    type: info
+    label: Informations
+    theme: none
+    text: |
+      Ce rôle permet d'accéder au contenu et de le modifier et d'ajouter/supprimer certaine page du site.
+      C'est le rôle le plus haut pour l'administration du site.
