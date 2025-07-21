@@ -17,4 +17,10 @@ fields:
     label:
       fr: Lien
       en: Link
-    type: url
+    type: link
+    options:
+      - url
+      - page
+      - file
+      - email
+      - tel
