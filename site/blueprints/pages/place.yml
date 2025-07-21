@@ -16,6 +16,7 @@ options:
   sort: false
   duplicate: false
   changeSlug: false
+  preview: false
 
 columns:
   - width: 2/3

@@ -10,6 +10,7 @@ options:
   delete:
     admin: true
     reader: false
+  preview: "https://grutli.ch/{{ page.parent.parent.slug }}/{{ page.parent.slug }}/{{ page.slug }}"
 
 
 status:

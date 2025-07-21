@@ -11,6 +11,7 @@ options:
   sort: false
   changeStatus: false
   duplicate: false
+  preview: false
 
 
 status:

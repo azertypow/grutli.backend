@@ -12,6 +12,7 @@ options:
   changeStatus: false
   duplicate: false
   move: false
+  preview: "https://grutli.ch/programmation"
 
 columns:
   - width: 1/3

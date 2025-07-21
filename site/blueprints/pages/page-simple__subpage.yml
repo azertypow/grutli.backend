@@ -13,6 +13,7 @@ options:
   changeTitle: true
   changeStatus: true
   duplicate: true
+  preview: "https://grutli.ch/{{ page.parent.slug }}/{{ page.slug }}"
 
 columns:
   - width: 1/1

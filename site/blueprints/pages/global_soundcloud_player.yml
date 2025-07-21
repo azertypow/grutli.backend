@@ -13,6 +13,7 @@ options:
   changeTitle: false
   changeStatus: false
   duplicate: false
+  preview: false
 
 status:
   draft:

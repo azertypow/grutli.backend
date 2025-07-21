@@ -10,6 +10,7 @@ options:
   delete:
     admin: true
     reader: false
+  preview: "https://grutli.ch/spectacle/{{ page.slug }}"
 
 status:
   draft:
