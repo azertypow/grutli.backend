@@ -17,6 +17,12 @@ options:
 columns:
   - width: 1/3
     sections:
+      drafts_fields:
+        type: fields
+        fields:
+          drafts_fields_title:
+            type: headline
+            label: 🔶 Tous les brouillons
       drafts:
         extends: sections/spectacles
         type: pages
@@ -26,12 +32,40 @@ columns:
 
   - width: 2/3
     sections:
-      listed:
+      current_season_listed_fields:
+        type: fields
+        fields:
+          current_season_listed_fields_title:
+            type: headline
+            label: 🔵 Saison en cours
+      current_season_listed:
         extends: sections/spectacles
         type: pages
         label: Publié
         status: listed
         search: true
-        info: " {{ page.season }}"
+        query: "page.children.filterBy('season', site.children.findBy('slug', 'saisons').children.filterBy('statut', 'en-cours').first.slug )"
+        info: "{{site.children.findBy('slug', 'saisons').children.filterBy('statut', 'en-cours').first.title }}"
+        sortBy: dateEnd desc
+
+
+  - width: 3/3
+    sections:
+      all_events_fields:
+        type: fields
+        fields:
+          all_events_fields_title_gap:
+            type: gap
+          all_events_fields_title:
+            type: headline
+            label: ⬜ Tous les événements
+      all_events:
+        extends: sections/spectacles
+        type: pages
+        label: Publié
+        status: listed
+        search: true
+        layout: list
+        info: "{{site.children.findBy('slug', 'saisons').children.findBy('slug', page.season).title}}"
         sortBy: dateEnd desc
 
