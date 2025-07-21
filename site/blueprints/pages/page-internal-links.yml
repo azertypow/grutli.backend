@@ -7,7 +7,9 @@ icon: page
 options:
   sort: true
   changeSlug: true
-#  delete: false
+  delete:
+    admin: true
+    reader: false
   changeTitle: true
   changeStatus: true
   duplicate: true

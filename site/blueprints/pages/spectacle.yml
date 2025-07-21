@@ -6,6 +6,11 @@ num: '{{ page.dateEnd.toDate("Ymd") }}'
 
 icon: 📖
 
+options:
+  delete:
+    admin: true
+    reader: false
+
 status:
   draft:
     label: Brouillon

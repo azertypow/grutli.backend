@@ -6,6 +6,12 @@ title: Évèvenement pour la diffusion
 
 icon: 📖
 
+options:
+  delete:
+    admin: true
+    reader: false
+
+
 status:
   draft:
     label: Brouillon

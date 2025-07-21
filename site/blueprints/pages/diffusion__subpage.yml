@@ -4,6 +4,11 @@ title: Les diffusions d'événements
 
 icon: ticket
 
+options:
+  delete:
+    admin: true
+    reader: false
+
 columns:
   - width: 1/1
     sections:
