@@ -9,6 +9,7 @@ fields:
     type: writer
     headings:
       - 2
+      - 3
     placeholder: field.blocks.text.placeholder
     marks:
       - bold
