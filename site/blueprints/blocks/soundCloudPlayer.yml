@@ -1,0 +1,14 @@
+name: SoundCloud Player
+icon: audio
+preview: fields
+
+fields:
+  url:
+    label:
+      fr: URL du player SoundCloud
+      en: SoundCloud player URL
+    type: url
+    placeholder: https://soundcloud.com/...
+    help:
+      fr: Collez l'URL du player SoundCloud
+      en: Paste the SoundCloud player URL
