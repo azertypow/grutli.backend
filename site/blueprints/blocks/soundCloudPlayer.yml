@@ -1,6 +1,5 @@
 name: SoundCloud Player
 icon: audio
-preview: fields
 
 fields:
   url:

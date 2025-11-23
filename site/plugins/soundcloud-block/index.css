@@ -1,0 +1,28 @@
+.k-block-type-soundCloudPlayer {
+  cursor: pointer;
+}
+
+.k-block-type-soundCloudPlayer .soundcloud-preview {
+  padding: 1rem;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+
+.k-block-type-soundCloudPlayer .soundcloud-preview iframe {
+  display: block;
+  max-width: 100%;
+}
+
+.k-block-type-soundCloudPlayer .soundcloud-placeholder {
+  padding: 2rem;
+  text-align: center;
+  background: #f7f7f7;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  color: #999;
+}
+
+.k-block-type-soundCloudPlayer .soundcloud-placeholder p {
+  margin: 0;
+  font-size: 0.875rem;
+}

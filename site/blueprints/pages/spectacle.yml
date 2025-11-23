@@ -239,6 +239,7 @@ columns:
           - link
           - quote
           - break
+          - soundCloudPlayer
 
       htmlContent_falk:
         width: 1/2
