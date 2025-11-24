@@ -253,3 +253,4 @@ columns:
           - link
           - quote
           - break
+          - soundCloudPlayer
