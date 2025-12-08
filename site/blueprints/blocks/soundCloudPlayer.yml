@@ -2,6 +2,13 @@ name: SoundCloud Player
 icon: audio
 
 fields:
+  title:
+    type: writer
+    marks:
+      - italic
+    nodes: false
+    inline: true
+
   url:
     label:
       fr: URL du player SoundCloud
