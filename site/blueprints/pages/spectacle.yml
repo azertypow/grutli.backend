@@ -69,6 +69,8 @@ columns:
             label: URL
             type: url
             required: true
+            placeholder: https://www.youtube.com/watch?v=ULg_KmIgXKU
+            help: Prendre l'URL de la page YouTube, sous cette forme https://www.youtube.com/watch?v=ULg_KmIgXKU
 
   - width: 1/4
     fields:
