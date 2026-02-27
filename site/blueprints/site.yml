@@ -92,4 +92,12 @@ tabs:
             type: pages
             template:
               - page-simple
+
+          pages_archives:
+            label: Archives
+            type: pages
+            status: listed
+            template:
+              - archives
+
   restaurant: tabs/files

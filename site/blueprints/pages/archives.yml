@@ -1,0 +1,38 @@
+blueprint: page
+
+title: Archives
+
+#num: date
+
+icon: 📖
+
+options:
+  delete:
+    admin: true
+    reader: false
+  preview: "https://grutli.ch/archives"
+
+
+status:
+  draft:
+    label: Brouillon
+    text: L'événement est toujours en mode brouillon. Elle ne peut être vue que par les éditeurs ayant accès à l'administration.
+  listed:
+    label: Publié
+    text: L'événement est en ligne.
+
+columns:
+  - width: 1/2
+    fields:
+      archives:
+        type: structure
+        fields:
+          title:
+            label: Titre
+            type: text
+          date:
+            label: Date
+            type: text
+          url:
+            label: URL
+            type: url
