@@ -40,6 +40,10 @@ if (isset($json['pageContent']['content']['htmlcontent'])) {
   $json['pageContent']['content']['htmlcontent'] = Utils::blockContentToJson($page->content()->htmlcontent()->toBlocks());
 }
 
+if (isset($json['pageContent']['content']['htmlcontent_falk'])) {
+  $json['pageContent']['content']['htmlcontent_falk'] = Utils::blockContentToJson($page->content()->htmlcontent_falk()->toBlocks());
+}
+
 //
 
 
