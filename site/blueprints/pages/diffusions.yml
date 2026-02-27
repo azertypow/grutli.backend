@@ -18,6 +18,18 @@ columns:
   - width: 1/1
     fields:
       htmlContent:
+        width: 1/2
+        type: blocks
+        label: Contenu
+        fieldsets:
+          - textWithTitle
+          - image
+          - video
+          - imageGallery
+          - link
+          - quote
+      htmlContent_falk:
+        width: 1/2
         type: blocks
         label: Contenu
         fieldsets:
